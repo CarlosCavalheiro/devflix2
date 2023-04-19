@@ -1,0 +1,247 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+:root {
+	--primaria: #000;
+	--secundaria: #222634;
+	--texto: #FFF;
+	--botao: #009748;
+	--botao_borda: #FFF;
+	--fundo-form: #2E3447;
+	--texto-form: #FFF;
+	--link: #FFF;
+	--link-sobre: #009748;
+	--fonte-principal: 'Inter';
+
+}
+
+body {	
+	color: var(--texto);
+	font-family: var(--fonte-principal);
+}
+
+header {
+	background-color: var(--primaria);
+	text-align: center;
+	padding: 20px 10px;
+}
+
+main {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.container {	
+	display: grid;	
+	grid-template-areas: "esquerda direita";
+	grid-template-columns: 720px 720px;		
+	grid-gap: 1rem;
+	height: 800px;	
+	justify-content: center;	
+}
+
+.coluna_esquerda {
+	background-color: transparent;
+	grid-area: esquerda;
+}
+
+.coluna_direita {
+	background-color: transparent;
+	grid-area: direita;
+}
+
+.fundo_primario {
+	background-color: var(--primaria);
+}
+
+.fundo_secundario {
+	background-color: var(--secundaria);
+}
+
+/*SEÇÃO PRINCIPAL*/
+.principal_background {
+	background-color: var(--primaria);
+	background-image: url('../imagens/background_principal.png');
+	background-repeat: no-repeat;
+	background-position: 250px 0px;
+}
+
+.principal_conteudo {
+	background: blue;
+	grid-area: esquerda;	
+	align-items: center;
+	text-align: center;
+}
+
+.principal_titulo {
+	margin: 90px 20px 20px 20px;
+
+}
+
+.principal_img {
+	margin: 20px 10px;
+}
+
+.principal_botao {
+	background-color: var(--botao);
+	color: var(--texto);
+	text-decoration: none;
+	margin: 20px 60px;
+	padding: 10px;
+	border-radius: 5px;
+	display: block;
+	border: 2px solid transparent;
+}
+
+.principal_botao:hover {
+	background-color: transparent;
+	color: var(--texto);	
+	border: 2px solid var(--texto);	
+}
+
+.principal_botao_sec {
+	background-color: transparent;
+	color: var(--texto);
+	text-decoration: none;
+	margin: 20px 60px;
+	padding: 10px;
+	border: 1px solid var(--botao_borda);
+	border-radius: 5px;
+	display: block;
+}
+
+/*SEÇÃO ASSISTA */
+.assista_img {	
+	grid-area: esquerda;	
+	margin: auto 0;	
+}
+.assista_conteudo {
+	grid-area: direita;
+	margin: auto 0;
+	text-align: left;
+}
+.assista_conteudo h1 {	
+	font-size: 48px;
+}
+
+/*SEÇÃO COMBO */
+.combo_img {	
+	grid-area: direita;	
+	margin: auto 0;	
+}
+.combo_conteudo {
+	grid-area: esquerda;
+	margin: auto 40px;	
+
+}
+.combo_botao {
+	background-color: var(--botao);
+	color: var(--texto);
+	text-decoration: none;
+	margin: 20px 60px;
+	padding: 15px;
+	border-radius: 5px;
+	display: block;
+}
+
+/*SEÇÃO BAIXAR CURSOS */
+.cursos_img {	
+	grid-area: esquerda;	
+	margin: auto 40px;	
+}
+.cursos_conteudo {
+	grid-area: direita;
+	margin: auto 0px;
+	text-align: left;	
+}
+.cursos_conteudo h1 {
+	font-size: 48px;
+}
+
+/*SEÇÃO DISPOSITIVOS*/
+.dispositivos_conteudo {	
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	justify-items: center;
+	grid-column-start: esquerda;
+	grid-column-end: direita;
+}
+.dispositivos_titulo{
+	margin: auto 0px;
+	text-align: center;	
+	grid-column-start: esquerda;
+	grid-column-end: direita;
+	font-size: 48px;
+}
+
+/*SEÇÃO CONTATO */
+.contato_conteudo {	
+	margin: auto 0px;	
+	grid-column-start: esquerda;
+	grid-column-end: direita;
+}
+.contato_conteudo h1{
+	font-size: 48px;
+}
+
+.control_form {
+	text-align: center;
+	background-color: var(--fundo-form);
+	color: var(--texto);	
+	border: 1px solid var(--texto);
+	border-radius: 10px;
+	font-size: 18px;
+	margin: 10px;
+	padding: 10px;
+	width: 500px;
+}
+.button_form {
+	background-color: var(--botao);
+	color: var(--texto);
+	text-decoration: none;	
+	padding: 10px;
+	border-radius: 5px;
+	display: block;
+	width: 520px;
+	margin: 0 auto;
+	font-size: 16px;
+	border: 2px solid transparent;
+}
+
+.button_form:hover {
+	background-color: transparent;
+	color: var(--texto);	
+	border: 2px solid var(--texto);	
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+}
+
+.lista {
+	display: flex;	
+	justify-content: center;
+}
+
+.lista_item {
+	margin: 10px;   
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista_item a:link {
+	color: var(--link);
+	text-decoration: none;
+}
+
+.lista_item a:hover {
+	color: var(--link-sobre);
+	text-decoration: none;
+}
+
+footer p {
+	margin: 10px;
+}
